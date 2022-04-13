@@ -28,7 +28,7 @@ client.on("ready", async () => {
       );
       channel.send(meme);
     }
-  }, 7200000);
+  }, 1000 * 60 * 30);
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
