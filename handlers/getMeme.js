@@ -2,7 +2,10 @@ const { default: axios } = require("axios");
 
 const subreddit = [
   "IndianDankMemes",
-  "meme"
+  "meme",
+  "dankinindia",
+  "bakchodi",
+  "indianpeoplequora",
 ];
 const getMeme = async () => {
   console.log("fetching meme");
