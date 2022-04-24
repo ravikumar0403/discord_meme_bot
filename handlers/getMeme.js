@@ -1,12 +1,9 @@
 const { default: axios } = require("axios");
 
-const indianReddit = [
+const subreddit = [
   "IndianDankMemes",
-  "india",
-  "indiangaming",
+  "meme",
   "dankinindia",
-  "indianpeoplefacebook",
-  "cricketshitpost",
   "bakchodi",
   "indianpeoplequora",
 ];
@@ -15,7 +12,7 @@ const getMeme = async () => {
   try {
     const { data } = await axios.get(
       `https://meme-api.herokuapp.com/gimme/${
-        indianReddit[parseInt(Math.random() * indianReddit.length)]
+        subreddit[parseInt(Math.random() * subreddit.length)]
       }`
     );
     if (data.nsfw) {
